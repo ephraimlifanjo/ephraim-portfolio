@@ -1,0 +1,159 @@
+@import "tailwindcss";
+
+@plugin "daisyui" {
+  themes: false;
+  logs: false;
+}
+
+@plugin "daisyui/theme" {
+  name: "ephraim";
+  default: true;
+  prefersdark: true;
+  color-scheme: dark;
+  --color-base-100: oklch(12% 0.008 270);
+  --color-base-200: oklch(16% 0.01 270);
+  --color-base-300: oklch(21% 0.012 270);
+  --color-base-content: oklch(95% 0.01 95);
+  --color-primary: oklch(91% 0.2 119);
+  --color-primary-content: oklch(14% 0.025 118);
+  --color-secondary: oklch(65% 0.24 294);
+  --color-secondary-content: oklch(98% 0.01 294);
+  --color-accent: oklch(72% 0.18 204);
+  --color-accent-content: oklch(12% 0.02 204);
+  --color-neutral: oklch(24% 0.01 270);
+  --color-neutral-content: oklch(94% 0.01 95);
+  --color-info: oklch(72% 0.15 235);
+  --color-success: oklch(73% 0.18 145);
+  --color-warning: oklch(82% 0.18 85);
+  --color-error: oklch(68% 0.22 25);
+  --radius-selector: 1rem;
+  --radius-field: 0.9rem;
+  --radius-box: 1.25rem;
+  --border: 1px;
+  --depth: 0;
+  --noise: 0;
+}
+
+@plugin "daisyui/theme" {
+  name: "ephraim-light";
+  color-scheme: light;
+  --color-base-100: oklch(97% 0.008 95);
+  --color-base-200: oklch(94% 0.01 95);
+  --color-base-300: oklch(89% 0.012 95);
+  --color-base-content: oklch(19% 0.012 270);
+  --color-primary: oklch(65% 0.19 119);
+  --color-primary-content: oklch(99% 0.005 95);
+  --color-secondary: oklch(54% 0.22 294);
+  --color-secondary-content: oklch(99% 0.005 95);
+  --color-accent: oklch(57% 0.14 204);
+  --color-accent-content: oklch(99% 0.005 95);
+  --color-neutral: oklch(32% 0.01 270);
+  --color-neutral-content: oklch(97% 0.008 95);
+  --color-info: oklch(62% 0.15 235);
+  --color-success: oklch(61% 0.17 145);
+  --color-warning: oklch(72% 0.18 85);
+  --color-error: oklch(60% 0.22 25);
+  --radius-selector: 1rem;
+  --radius-field: 0.9rem;
+  --radius-box: 1.25rem;
+  --border: 1px;
+  --depth: 0;
+  --noise: 0;
+}
+
+:root {
+  --font-sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--color-base-100);
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: var(--color-base-100);
+  color: var(--color-base-content);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: color-mix(in oklab, var(--color-primary) 88%, black);
+  color: var(--color-primary-content);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+.font-mono { font-family: var(--font-mono); }
+.section-space { padding-block: clamp(5rem, 9vw, 8.5rem); }
+.section-kicker { font-family: var(--font-mono); font-size: 0.72rem; line-height: 1rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: color-mix(in oklab, var(--color-primary) 88%, var(--color-base-content)); }
+
+.skip-link {
+  position: fixed;
+  left: 1rem;
+  top: 1rem;
+  z-index: 1000;
+  transform: translateY(-180%);
+  border-radius: 999px;
+  background: var(--color-primary);
+  color: var(--color-primary-content);
+  padding: 0.7rem 1rem;
+  font-weight: 700;
+  transition: transform 150ms ease;
+}
+.skip-link:focus { transform: translateY(0); }
+
+.hero-grid {
+  background-image:
+    linear-gradient(color-mix(in oklab, var(--color-base-content) 7%, transparent) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in oklab, var(--color-base-content) 7%, transparent) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: linear-gradient(to bottom, black 0%, transparent 88%);
+}
+
+.hero-glow {
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 10% 20%, color-mix(in oklab, var(--color-primary) 12%, transparent), transparent 30%),
+    radial-gradient(circle at 80% 30%, color-mix(in oklab, var(--color-secondary) 14%, transparent), transparent 33%);
+}
+
+.project-card::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  z-index: -1;
+  border-radius: inherit;
+  opacity: 0;
+  background: conic-gradient(from 90deg, transparent 0 20%, color-mix(in oklab, var(--color-primary) 55%, transparent), transparent 45% 100%);
+  transition: opacity 260ms ease;
+}
+.project-card:hover::before { opacity: 0.75; }
+
+.scroll-progress {
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: 999;
+  height: 2px;
+  transform: scaleX(0);
+  transform-origin: left center;
+  background: var(--color-primary);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+  .scroll-progress { display: none; }
+}

@@ -1,43 +1,31 @@
 {
-  "name": "ephraim-portfolio",
-  "version": "0.1.0",
+  "name": "ephraim-lifanjo-portfolio",
+  "description": "Multilingual portfolio of Ephraim Lifanjo Sewa - Full Stack Web & Mobile Developer and Product Engineer.",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint",
-    "format": "prettier --write .",
-    "format:check": "prettier --check .",
-    "check": "npm run lint && npm run build"
+    "lint": "eslint ."
   },
   "dependencies": {
-    "@portabletext/react": "^7.0.1",
-    "@sanity/icons": "^5.2.1",
-    "@sanity/image-url": "^2.1.1",
-    "@sanity/vision": "^5.31.1",
-    "clsx": "^2.1.1",
-    "lucide-react": "^1.28.0",
-    "motion": "^12.43.0",
-    "next": "16.2.12",
-    "next-sanity": "^13.2.3",
-    "next-themes": "^0.4.6",
-    "react": "19.2.4",
-    "react-dom": "19.2.4",
-    "resend": "^6.18.1",
-    "sanity": "^5.31.1",
-    "styled-components": "^6.4.4",
-    "tailwind-merge": "^3.6.0",
-    "zod": "^4.4.3"
+    "framer-motion": "^12.23.12",
+    "gsap": "^3.13.0",
+    "next": "16.2.7",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "react-icons": "^5.6.0",
+    "sharp": "^0.34.5",
+    "three": "^0.179.1"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4",
-    "babel-plugin-react-compiler": "1.0.0",
-    "daisyui": "^5.7.14",
-    "eslint": "^9",
-    "eslint-config-next": "16.2.12",
-    "prettier": "^3.9.6",
-    "prettier-plugin-tailwindcss": "^0.8.1",
-    "tailwindcss": "^4"
+    "@tailwindcss/postcss": "^4.3.0",
+    "autoprefixer": "latest",
+    "eslint": "^9.20.0",
+    "eslint-config-next": "^16.2.7",
+    "postcss": "latest",
+    "sass": "^1.100.0",
+    "tailwindcss": "latest"
   }
 }

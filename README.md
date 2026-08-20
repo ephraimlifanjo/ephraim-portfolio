@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Ephraim Lifanjo Sewa — Developer Portfolio
 
-## Getting Started
+A production-oriented, multilingual portfolio for **Ephraim Lifanjo Sewa**, built from the supplied `developer-portfolio-main` base and enhanced with ideas/assets from the supplied React 3D portfolio.
 
-First, run the development server:
+## What is included
+
+- Next.js 16 + React 19 + Tailwind CSS 4
+- Responsive single-page portfolio, no admin dashboard
+- Automatic browser-language selection: English, French, German
+- Manual EN / FR / DE language switcher saved in `localStorage`
+- Three.js animated 3D hero object
+- Framer Motion section transitions
+- GSAP hero entrance animation
+- Real supplied portrait and work photos, cropped for portfolio use without altering facial geometry
+- Nova Studio branding asset
+- Projects: Clarvo Platform, Cameroon Zoom, Les Fleurs Invoice, enterprise invoice systems, RUSH, QRCode Master Pro, WhatsApp Status Saver Pro, open-source portfolio
+- Education: GCE O-Level, GCE A-Level Science, HND Software Engineering, Bachelor of Technology / Computer Science, future Master's goal
+- Direct contact by email and WhatsApp, avoiding fragile contact-form secrets by default
+- SEO metadata and recruiter-friendly content structure
+- Existing template assets retained in the repository for future reuse
+- 3D model assets from the second supplied project copied into `public/models/`
+
+## Run locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Production test
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## Deploy to Vercel
 
-To learn more about Next.js, take a look at the following resources:
+1. Push this folder to a GitHub repository.
+2. Import the repository into Vercel.
+3. Framework preset: **Next.js**.
+4. Build command: `npm run build`.
+5. No environment variables are required for the current direct email/WhatsApp contact flow.
+6. Deploy.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Main customization files
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `utils/data/portfolio-data.js` — profile, projects, skills, experience, education and translations
+- `app/components/portfolio/PortfolioClient.jsx` — page UI and sections
+- `app/components/portfolio/Hero3D.jsx` — Three.js hero animation
+- `app/components/portfolio/LanguageProvider.jsx` — language detection/switching
+- `app/css/globals.scss` — global visual system
+- `public/profile/` — profile portrait
+- `public/work/` — professional work images
+- `public/brand/` — Nova Studio brand asset
 
-## Deploy on Vercel
+## Contact / public profiles
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Email: `ephraimlifanjos@gmail.com`
+- WhatsApp: `+237 696 762 152`
+- GitHub: `https://github.com/ephraimlifanjo`
+- LinkedIn: `https://www.linkedin.com/in/ephraim-lifanjo-5b2156329`
+- X: `https://x.com/EphraimLifanjo`
+- DEV: `https://dev.to/ephraim_lifanjo`
+- Stack Overflow: `https://stackoverflow.com/users/30354977/ephraim-lifanjo-sewa`
+- Bluesky: `https://bsky.app/profile/ephraim-lifanjo.bsky.social`
+- Reddit: `https://www.reddit.com/user/EphraimSewa5/`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Notes
+
+The portfolio intentionally avoids unsupported claims about years of professional experience. It emphasizes demonstrated products, internship experience, co-founding/product work, community building and the breadth of the technical stack instead.
+
+The original portfolio base advertises Next.js 16, React 19, Tailwind CSS 4, responsiveness, SEO, App Router, server components, dark theme/Lottie support and deployment guidance. This rebuilt version keeps the same modern Next.js foundation while simplifying the runtime for reliability.
+
+## Base / attribution
+
+This project was rebuilt from the user-supplied `developer-portfolio-main` starter (the Said7388 developer portfolio family) and a user-supplied React 3D portfolio for visual/3D inspiration. Keep the applicable upstream license/attribution when redistributing any upstream code or assets.

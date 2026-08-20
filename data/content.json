@@ -1,0 +1,484 @@
+{
+  "site": {
+    "name": "Ephraim Lifanjo Sewa",
+    "title": "Software Engineer",
+    "eyebrow": "Web · Mobile · Backend · Product Engineering",
+    "tagline": "I turn ambitious ideas into fast, useful digital products.",
+    "bio": "Cameroon-based software engineer building web applications, mobile products, business tools and reliable backend systems. I care about clear UX, maintainable code and shipping software that solves real problems.",
+    "location": "Cameroon",
+    "availability": "Available for selected freelance, product and engineering opportunities",
+    "email": "ephraimlifanjos@gmail.com",
+    "phone": "+237 696 762 152",
+    "avatar": "/images/ephraim-profile.jpg",
+    "secondaryImage": "/images/ephraim-candidate.jpg",
+    "resumeUrl": "/resume/ephraim-lifanjo-sewa-resume.pdf",
+    "primaryCta": "View projects",
+    "secondaryCta": "Start a collaboration",
+    "copyright": "Ephraim Lifanjo Sewa",
+    "avatarAlt": "Portrait of Ephraim Lifanjo Sewa",
+    "secondaryImageAlt": "Ephraim Lifanjo Sewa during a software engineering presentation"
+  },
+  "seo": {
+    "title": "Ephraim Lifanjo Sewa — Software Engineer",
+    "description": "Portfolio of Ephraim Lifanjo Sewa, a software engineer building web, mobile and backend products for businesses, startups and communities.",
+    "keywords": [
+      "Ephraim Lifanjo Sewa",
+      "software engineer Cameroon",
+      "Next.js developer Cameroon",
+      "React Native developer Cameroon",
+      "full stack developer Cameroon",
+      "mobile app developer Cameroon"
+    ]
+  },
+  "stats": [
+    {
+      "value": "5+",
+      "label": "Flagship products"
+    },
+    {
+      "value": "Web + Mobile",
+      "label": "Product coverage"
+    },
+    {
+      "value": "500+",
+      "label": "Developers in community"
+    },
+    {
+      "value": "EN / FR",
+      "label": "Working languages"
+    }
+  ],
+  "socials": [
+    {
+      "label": "GitHub",
+      "url": "https://github.com/ephraimlifanjo",
+      "icon": "Github"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "https://cm.linkedin.com/in/ephraim-lifanjo-5b2156329",
+      "icon": "Linkedin"
+    },
+    {
+      "label": "Bluesky",
+      "url": "https://bsky.app/profile/ephraim-lifanjo.bsky.social",
+      "icon": "Cloud"
+    },
+    {
+      "label": "Jobbers",
+      "url": "https://www.jobbers.io/fr/author/ephraim-lifanjo/",
+      "icon": "BriefcaseBusiness"
+    },
+    {
+      "label": "Expo",
+      "url": "https://expo.dev/accounts/ephraim_lifanjo/projects/status-whatsapp-saver",
+      "icon": "Smartphone"
+    },
+    {
+      "label": "WhatsApp",
+      "url": "https://wa.me/237696762152",
+      "icon": "MessageCircle"
+    },
+    {
+      "label": "Email",
+      "url": "mailto:ephraimlifanjos@gmail.com",
+      "icon": "Mail"
+    }
+  ],
+  "skills": [
+    {
+      "category": "Frontend",
+      "items": [
+        "JavaScript",
+        "React",
+        "Next.js",
+        "Tailwind CSS",
+        "daisyUI",
+        "HTML",
+        "CSS",
+        "GSAP"
+      ]
+    },
+    {
+      "category": "Mobile",
+      "items": [
+        "React Native",
+        "Expo",
+        "Expo Router",
+        "SQLite",
+        "Android builds",
+        "PWA"
+      ]
+    },
+    {
+      "category": "Backend & APIs",
+      "items": [
+        "Node.js",
+        "Express.js",
+        "Next.js Route Handlers",
+        "REST APIs",
+        "Authentication",
+        "Payments"
+      ]
+    },
+    {
+      "category": "Data & Cloud",
+      "items": [
+        "PostgreSQL",
+        "Firebase",
+        "Supabase",
+        "MySQL",
+        "Cloudinary",
+        "SQLite"
+      ]
+    },
+    {
+      "category": "Engineering",
+      "items": [
+        "Git",
+        "GitHub",
+        "Vercel",
+        "CI/CD",
+        "Responsive UI",
+        "Accessibility",
+        "SEO",
+        "Performance"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Clarvo",
+      "slug": "clarvo",
+      "featured": true,
+      "category": "Education · Mobile",
+      "status": "In active development",
+      "shortDescription": "A focused exam-preparation mobile app for Cameroonian students with past papers, notes, planning, offline access and progress features.",
+      "fullDescription": "Clarvo is an exam-preparation product designed around the real study flow of GCE and HND learners: find the right paper, study useful notes, practise, plan revision, continue offline and track progress without clutter.",
+      "coverImage": "/images/clarvo.png",
+      "gallery": [
+        "/images/clarvo.png",
+        "/images/ephraim-candidate.jpg"
+      ],
+      "technologies": [
+        "React Native",
+        "Expo",
+        "Expo Router",
+        "Firebase",
+        "SQLite",
+        "Cloudinary"
+      ],
+      "problem": "Students often jump between PDFs, chat groups, websites and notebooks just to prepare for one exam session.",
+      "solution": "A mobile-first study flow that groups past questions, answers, notes, downloads, planning and progress in one clear product.",
+      "responsibilities": "Product architecture, mobile frontend, navigation, data flow, offline strategy, build pipeline and product UX.",
+      "challenges": "Keeping the experience fast on affordable Android phones, handling offline content, and making a large exam catalogue easy to navigate.",
+      "results": "A production-oriented Expo codebase with real authentication, content flows, offline considerations, gamification and test APK distribution.",
+      "githubUrl": "",
+      "liveUrl": "",
+      "storeUrl": "",
+      "year": "2026",
+      "role": "Co-founder · Product & engineering",
+      "coverFit": "contain",
+      "videoUrl": "",
+      "metaTitle": "Clarvo — Software Engineering Case Study",
+      "metaDescription": "A focused exam-preparation mobile app for Cameroonian students with past papers, notes, planning, offline access and progress features.",
+      "socialImage": "/images/clarvo.png"
+    },
+    {
+      "title": "Cameroon Zoom",
+      "slug": "cameroon-zoom",
+      "featured": true,
+      "category": "Business Directory · Web",
+      "status": "Production project",
+      "shortDescription": "A Yelp-inspired business discovery platform adapted to Cameroon, with search, categories, ratings, maps and business profiles.",
+      "fullDescription": "Cameroon Zoom is a local business directory focused on making companies, services and useful places easier to discover in Cameroon. It combines structured business profiles, search, reviews, maps and owner-facing flows.",
+      "coverImage": "/images/cameroon-zoom.png",
+      "gallery": [
+        "/images/cameroon-zoom.png",
+        "/images/ephraim-office.jpg"
+      ],
+      "technologies": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Firebase",
+        "Leaflet",
+        "OpenStreetMap",
+        "Vercel"
+      ],
+      "problem": "Local business information is fragmented across social networks, messaging apps and unstructured listings.",
+      "solution": "A searchable, map-aware directory with business profiles, categories, reviews, verification flows and clear discovery UX.",
+      "responsibilities": "Product design, frontend architecture, business data model, mapping, search, authentication and deployment.",
+      "challenges": "Normalizing inconsistent location data, designing trustworthy business pages and keeping map/search performance predictable.",
+      "results": "A working directory product with responsive web UX, business discovery, reviews and geolocation-oriented features.",
+      "githubUrl": "",
+      "liveUrl": "https://cameroonzoom.vercel.app",
+      "storeUrl": "",
+      "year": "2025–2026",
+      "role": "Product designer & full-stack engineer",
+      "coverFit": "contain",
+      "videoUrl": "",
+      "metaTitle": "Cameroon Zoom — Software Engineering Case Study",
+      "metaDescription": "A Yelp-inspired business discovery platform adapted to Cameroon, with search, categories, ratings, maps and business profiles.",
+      "socialImage": "/images/cameroon-zoom.png"
+    },
+    {
+      "title": "Les Fleurs Invoice",
+      "slug": "les-fleurs-invoice",
+      "featured": true,
+      "category": "Business Tool · Web",
+      "status": "Client project",
+      "shortDescription": "A modern invoice and business-management application built for real client workflows, document generation and payment links.",
+      "fullDescription": "A practical invoicing system built around day-to-day business operations: clients, invoices, PDF generation, online consultation, branding and reliable cloud-backed data access.",
+      "coverImage": "/images/ephraim-office.jpg",
+      "gallery": [
+        "/images/ephraim-office.jpg"
+      ],
+      "technologies": [
+        "Next.js",
+        "React",
+        "Firebase",
+        "PDF",
+        "PWA",
+        "Vercel"
+      ],
+      "problem": "Small businesses need a faster way to create, share and follow professional invoices without heavyweight accounting software.",
+      "solution": "A focused dashboard with document generation, client records, branded invoices and shareable online views.",
+      "responsibilities": "Full-stack implementation, Firebase migration, access control, invoice generation, UX and deployment fixes.",
+      "challenges": "Maintaining consistent business data, reliable document rendering and secure server-side access checks.",
+      "results": "A client-oriented web application with production workflows rather than a demo-only CRUD interface.",
+      "githubUrl": "",
+      "liveUrl": "",
+      "storeUrl": "",
+      "year": "2026",
+      "role": "Full-stack engineer",
+      "coverFit": "cover",
+      "videoUrl": "",
+      "metaTitle": "Les Fleurs Invoice — Software Engineering Case Study",
+      "metaDescription": "A modern invoice and business-management application built for real client workflows, document generation and payment links.",
+      "socialImage": "/images/ephraim-office.jpg"
+    },
+    {
+      "title": "QRcode Master",
+      "slug": "qrcode-master",
+      "featured": true,
+      "category": "Utility · Mobile",
+      "status": "Android project",
+      "shortDescription": "A QR and barcode scanner built for quick scanning, history, gallery import, Wi‑Fi sharing and practical daily use.",
+      "fullDescription": "QRcode Master is a mobile utility focused on speed and clarity: scan, import, save history and share useful QR-based information with a persistent, mobile-native navigation model.",
+      "coverImage": "/images/ephraim-campus.jpg",
+      "gallery": [
+        "/images/ephraim-campus.jpg"
+      ],
+      "technologies": [
+        "React Native",
+        "Expo",
+        "Camera",
+        "SQLite",
+        "Android"
+      ],
+      "problem": "Many scanner apps are ad-heavy or bury simple scan/history flows under unnecessary UI.",
+      "solution": "A lightweight scanner experience with camera controls, gallery import, batch-friendly history and practical QR utilities.",
+      "responsibilities": "Mobile UI, camera integration, local history, navigation and Android build preparation.",
+      "challenges": "Camera permissions, low-light scanning, native dependencies and keeping APK size reasonable.",
+      "results": "A testable Android application prepared for development and shareable builds.",
+      "githubUrl": "",
+      "liveUrl": "",
+      "storeUrl": "",
+      "year": "2026",
+      "role": "Mobile engineer",
+      "coverFit": "cover",
+      "videoUrl": "",
+      "metaTitle": "QRcode Master — Software Engineering Case Study",
+      "metaDescription": "A QR and barcode scanner built for quick scanning, history, gallery import, Wi‑Fi sharing and practical daily use.",
+      "socialImage": "/images/ephraim-campus.jpg"
+    },
+    {
+      "title": "Rush Smart File Organizer",
+      "slug": "rush-smart-file-organizer",
+      "featured": true,
+      "category": "Desktop · Productivity",
+      "status": "Open-source project",
+      "shortDescription": "A desktop productivity tool for organizing files with a simple local-first workflow.",
+      "fullDescription": "Rush explores a focused desktop workflow for sorting and managing files locally, with the goal of reducing repetitive organization work without sending personal files to a cloud service.",
+      "coverImage": "/images/ephraim-office.jpg",
+      "gallery": [
+        "/images/ephraim-office.jpg"
+      ],
+      "technologies": [
+        "Python",
+        "Tkinter",
+        "SQLite",
+        "Desktop"
+      ],
+      "problem": "Downloads and work folders quickly become noisy, making it harder to retrieve files and keep a clean workspace.",
+      "solution": "A local desktop organizer that helps classify and manage files with a straightforward interface.",
+      "responsibilities": "Product concept, desktop interface, local database and file-management logic.",
+      "challenges": "Safe file operations, cross-platform paths and predictable local state.",
+      "results": "Published as a public GitHub repository and used as an exploration of local-first desktop tooling.",
+      "githubUrl": "https://github.com/ephraimlifanjo/RUSH",
+      "liveUrl": "",
+      "storeUrl": "",
+      "year": "2026",
+      "role": "Desktop software engineer",
+      "coverFit": "cover",
+      "videoUrl": "",
+      "metaTitle": "Rush Smart File Organizer — Software Engineering Case Study",
+      "metaDescription": "A desktop productivity tool for organizing files with a simple local-first workflow.",
+      "socialImage": "/images/ephraim-office.jpg"
+    }
+  ],
+  "experience": [
+    {
+      "organization": "Nova Studio",
+      "role": "Founder · Software Engineer",
+      "period": "2026 — Present",
+      "location": "Cameroon",
+      "description": "Building digital products and growing a developer community around practical web, mobile and software engineering.",
+      "technologies": [
+        "Next.js",
+        "React Native",
+        "Node.js",
+        "Product Engineering"
+      ]
+    },
+    {
+      "organization": "UPSYLONE SARL",
+      "role": "Software Engineering Intern",
+      "period": "Jul 2025 — Nov 2025",
+      "location": "Douala, Cameroon",
+      "description": "Worked in a professional software environment on web application development, responsive interfaces and practical engineering tasks.",
+      "technologies": [
+        "Web Development",
+        "JavaScript",
+        "Responsive UI",
+        "Git"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "school": "ISSTMADD",
+      "program": "HND — Software Engineering",
+      "period": "2024 — 2026",
+      "location": "Ngaoundéré, Cameroon",
+      "description": "Higher National Diploma studies focused on software engineering, application development, databases, networking and project delivery."
+    }
+  ],
+  "services": [
+    {
+      "title": "Web Applications",
+      "description": "Responsive, SEO-aware products and business platforms built with modern React and Next.js architecture.",
+      "icon": "PanelsTopLeft"
+    },
+    {
+      "title": "Mobile Applications",
+      "description": "Android-first React Native and Expo applications designed for real devices, offline constraints and production builds.",
+      "icon": "Smartphone"
+    },
+    {
+      "title": "Backend & API Integration",
+      "description": "Secure server routes, authentication, business logic, databases, external APIs and payment integrations.",
+      "icon": "ServerCog"
+    },
+    {
+      "title": "Product Engineering",
+      "description": "From rough idea to shippable product: UX structure, architecture, implementation, debugging and release preparation.",
+      "icon": "Blocks"
+    }
+  ],
+  "testimonials": [],
+  "credentials": [
+    {
+      "title": "Innovation Bootcamp 2026 — Participation",
+      "issuer": "Cameroon International Tech Summit / Mountain Hub",
+      "date": "28 March 2026",
+      "location": "Ngaoundéré, Cameroon",
+      "description": "Participation in the Innovation Bootcamp 2026 focused on strengthening an entrepreneurial and innovation ecosystem.",
+      "image": "/images/innovation-certificate.jpg"
+    }
+  ],
+  "events": [
+    {
+      "title": "Innovation Bootcamp 2026",
+      "slug": "innovation-bootcamp-2026",
+      "date": "2026-03-28",
+      "endDate": "2026-03-28",
+      "time": "",
+      "location": "Ngaoundéré, Adamawa, Cameroon",
+      "status": "Past event",
+      "summary": "Participation in a regional technology and entrepreneurship bootcamp bringing together builders, communities and innovation actors.",
+      "description": "The Innovation Bootcamp 2026 brought together technology and entrepreneurship participants in Ngaoundéré. I participated as part of my broader work around software products, developer community building and the local innovation ecosystem.",
+      "image": "/images/innovation-event.jpg",
+      "registrationUrl": "",
+      "featured": true,
+      "organizer": "CITS26 Organizing Committee",
+      "metaTitle": "Innovation Bootcamp 2026",
+      "metaDescription": "Participation in a regional technology and entrepreneurship bootcamp bringing together builders, communities and innovation actors.",
+      "socialImage": "/images/innovation-event.jpg"
+    }
+  ],
+  "copy": {
+    "heroLead": "I build digital products that",
+    "heroAccent": "work.",
+    "locationLabel": "Based in",
+    "focusLabel": "Focus",
+    "focusValue": "Web · Mobile · Backend",
+    "resumeLabel": "Resume PDF",
+    "workEyebrow": "Selected work",
+    "workTitle": "Products built around real problems, not portfolio filler.",
+    "workDescription": "A small set of projects that show product thinking, engineering range and practical delivery across web, mobile and desktop.",
+    "allProjectsLabel": "All projects",
+    "aboutEyebrow": "About",
+    "aboutTitle": "Engineering with a product mindset.",
+    "aboutDescription": "I like code that is understandable, interfaces that stay out of the way and products that remain useful after the demo.",
+    "aboutCardOneTitle": "Build end to end",
+    "aboutCardOneText": "Frontend, mobile, backend routes, authentication, databases, integrations, deployment and iteration.",
+    "aboutCardTwoTitle": "Ship for real users",
+    "aboutCardTwoText": "I care about device constraints, clear flows, accessibility, performance and production build problems.",
+    "skillsLabel": "Core stack",
+    "experienceEyebrow": "Experience",
+    "experienceTitle": "Learning by building, shipping and working with real constraints.",
+    "educationLabel": "Education & credential",
+    "servicesEyebrow": "Services",
+    "servicesTitle": "How I can help a product move forward.",
+    "servicesDescription": "Focused engineering support from interface to backend and release, without adding complexity for its own sake.",
+    "eventsEyebrow": "Events",
+    "eventsTitle": "Building in public and showing up in the ecosystem.",
+    "eventsDescription": "Events, bootcamps and community activities published from the same admin CMS.",
+    "allEventsLabel": "All events",
+    "testimonialsEyebrow": "Proof",
+    "testimonialsTitle": "What collaborators and clients say.",
+    "contactEyebrow": "Contact",
+    "contactTitle": "Have something useful to build? Let’s talk.",
+    "contactDescription": "For product work, collaborations, engineering opportunities or a serious project idea, send a short message with the context.",
+    "footerStatement": "Building useful software from Cameroon for a wider world.",
+    "talkLabel": "Let’s talk",
+    "projectsPageEyebrow": "Portfolio",
+    "projectsPageTitle": "Selected projects and product case studies.",
+    "projectsPageDescription": "Each project focuses on the problem, the engineering decisions, the implementation and what was learned or delivered.",
+    "eventsPageEyebrow": "Events",
+    "eventsPageTitle": "Events, bootcamps and community moments.",
+    "eventsPageDescription": "A public record of selected ecosystem activities. New events can be created, edited or removed from the admin CMS.",
+    "resumePageEyebrow": "Resume",
+    "resumeDownloadLabel": "Download PDF"
+  },
+  "navigation": [
+    {
+      "href": "/#work",
+      "label": "Work"
+    },
+    {
+      "href": "/#about",
+      "label": "About"
+    },
+    {
+      "href": "/events",
+      "label": "Events"
+    },
+    {
+      "href": "/#contact",
+      "label": "Contact"
+    }
+  ]
+}
