@@ -15,7 +15,6 @@ import {
 } from "react-icons/fa";
 import {
   SiArduino,
-  SiCanva,
   SiCloudflare,
   SiCplusplus,
   SiCss,
@@ -50,6 +49,7 @@ import {
   SiVercel,
 } from "react-icons/si";
 import Brand from "@/components/Brand";
+import CanvaMark from "@/components/CanvaMark";
 import EducationSheet from "@/components/EducationSheet";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import OpenAIMark from "@/components/OpenAIMark";
@@ -133,7 +133,7 @@ const groups = [
     emoji: "🎨",
     icon: FaPalette,
     items: [
-      ["Figma", SiFigma], ["Canva", SiCanva], ["UX thinking", FaPalette], ["Accessibility", FaDesktop], ["Technical SEO", FaCode], ["International SEO", FaCode],
+      ["Figma", SiFigma], ["Canva", CanvaMark], ["UX thinking", FaPalette], ["Accessibility", FaDesktop], ["Technical SEO", FaCode], ["International SEO", FaCode],
     ],
   },
 ];
