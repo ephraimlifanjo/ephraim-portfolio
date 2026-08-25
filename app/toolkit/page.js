@@ -31,6 +31,7 @@ import {
   SiMysql,
   SiNextdotjs,
   SiNodedotjs,
+  SiOpenai,
   SiPostgresql,
   SiPrisma,
   SiPython,
@@ -49,6 +50,8 @@ export const metadata = {
   description: "The engineering toolkit of Ephraim Lifanjo: JavaScript, Python, C++, React, Next.js, Svelte, React Native, Expo, Node.js, Express, databases, cloud, AI and product engineering.",
   alternates: { canonical: "/toolkit" },
 };
+
+export const revalidate = false;
 
 const groups = [
   {
@@ -104,7 +107,7 @@ const groups = [
     emoji: "🧠",
     icon: FaBrain,
     items: [
-      ["OpenAI / ChatGPT", FaBrain], ["AI integration", FaBrain], ["OCR & local ML workflows", FaBrain], ["Automation", FaBrain], ["System architecture", FaServer],
+      ["OpenAI / ChatGPT", SiOpenai], ["AI integration", FaBrain], ["OCR & local ML workflows", FaBrain], ["Automation", FaBrain], ["System architecture", FaServer],
     ],
   },
   {
