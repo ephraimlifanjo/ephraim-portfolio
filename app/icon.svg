@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="EP monogram">
   <rect width="64" height="64" rx="18" fill="#11110f"/>
-  <path d="M25 14h14c8.3 0 14 5.3 14 13s-5.7 13-14 13h-7v11h-7V14Zm7 7v12h6.5c4.5 0 7.5-2 7.5-6s-3-6-7.5-6H32Z" fill="#f1df52"/>
-  <path d="M12 18h19v6H19v7h11v6H19v7h12v6H12V18Z" fill="#fffdf8"/>
+  <path d="M20 13v38h8V39h10.5C48 39 54 34 54 26S48 13 38.5 13H20Zm8 8h10c4.8 0 7.5 1.8 7.5 5s-2.7 5-7.5 5H28V21Z" fill="#fffdf8"/>
+  <path d="M31 22h11v3.8h-6.7v2.6h6.2v3.6h-6.2v2.6H42v3.8H31V22Z" fill="#f1df52"/>
 </svg>
