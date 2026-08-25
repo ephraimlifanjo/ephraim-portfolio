@@ -12,10 +12,9 @@ import {
 } from "react-icons/fa";
 import {
   SiArduino,
-  SiCanva,
   SiCloudflare,
   SiCplusplus,
-  SiCss3,
+  SiCss,
   SiDocker,
   SiElectron,
   SiExpress,
@@ -32,7 +31,6 @@ import {
   SiMysql,
   SiNextdotjs,
   SiNodedotjs,
-  SiOpenai,
   SiPostgresql,
   SiPrisma,
   SiPython,
@@ -58,7 +56,7 @@ const groups = [
     emoji: "⌨️",
     icon: FaCode,
     items: [
-      ["JavaScript", SiJavascript], ["Python", SiPython], ["C++", SiCplusplus], ["HTML5", SiHtml5], ["CSS3", SiCss3], ["Git", SiGit], ["GitHub", SiGithub],
+      ["JavaScript", SiJavascript], ["Python", SiPython], ["C++", SiCplusplus], ["HTML5", SiHtml5], ["CSS3", SiCss], ["Git", SiGit], ["GitHub", SiGithub],
     ],
   },
   {
@@ -106,7 +104,7 @@ const groups = [
     emoji: "🧠",
     icon: FaBrain,
     items: [
-      ["OpenAI / ChatGPT", SiOpenai], ["AI integration", FaBrain], ["OCR & local ML workflows", FaBrain], ["Automation", FaBrain], ["System architecture", FaServer],
+      ["OpenAI / ChatGPT", FaBrain], ["AI integration", FaBrain], ["OCR & local ML workflows", FaBrain], ["Automation", FaBrain], ["System architecture", FaServer],
     ],
   },
   {
@@ -114,7 +112,7 @@ const groups = [
     emoji: "🎨",
     icon: FaPalette,
     items: [
-      ["Figma", SiFigma], ["Canva", SiCanva], ["UX thinking", FaPalette], ["Responsive design", FaDesktop], ["SEO", FaCode],
+      ["Figma", SiFigma], ["Canva", FaPalette], ["UX thinking", FaPalette], ["Responsive design", FaDesktop], ["SEO", FaCode],
     ],
   },
 ];
