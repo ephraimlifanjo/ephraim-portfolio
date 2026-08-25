@@ -1,21 +1,19 @@
 # Ephraim Lifanjo
 
-> Personal software engineering portfolio of Ephraim Lifanjo Sewa, a Cameroon-based software engineer focused on full-stack web, mobile, desktop software, architecture and practical AI integration.
+Ephraim Lifanjo Sewa is a software engineer based in Cameroon. He builds full stack web, mobile and desktop software, designs complex system architectures, integrates payment APIs and Mobile Money, and adds AI, OCR and automation to practical products.
 
 Canonical site: https://ephraimlifanjo.vercel.app/
 Toolkit: https://ephraimlifanjo.vercel.app/toolkit/
 GitHub: https://github.com/ephraimlifanjo
 LinkedIn: https://www.linkedin.com/in/ephraim-lifanjo-5b2156329
+Dikalo: https://www.dklo.co/profile/696762152
 Bluesky: https://bsky.app/profile/ephraim-lifanjo.bsky.social
 DEV.to: https://dev.to/ephraim_lifanjo
-Jobbers: https://www.jobbers.io/fr/author/ephraim-lifanjo/
 
-## Technical focus
+Core technologies: JavaScript, TypeScript, Python, C++, React, Next.js, SvelteKit, React Native, Expo, Electron, Node.js, Express.js, NestJS, PostgreSQL, MySQL, SQLite, MongoDB, Firebase, Supabase, Vercel, Cloudflare, Docker, payment APIs, Mobile Money, MTN Mobile Money, Orange Money and AI integration.
 
-JavaScript, Python, C++, React, Next.js, Svelte/SvelteKit, React Native, Expo, Node.js, Express.js, PostgreSQL, MySQL, SQLite, MongoDB, Firebase, Vercel, Cloudflare, Docker, software architecture, OCR, automation and AI integration.
+Education: GCE Ordinary Level, GCE Advanced Level, Higher National Diploma in Software Engineering at Higher Institute ISMAT, Bachelor of Technology at the University Institute of Technology of Ngaoundéré, Bachelor of Science at Higher Institute ISMAT.
 
-## Collaboration
+Languages available on the portfolio: English, French, German, Spanish, Portuguese, Italian, Chinese, Japanese, Korean, Arabic and Russian. English is the default when the visitor language is not supported.
 
-Open to websites, mobile apps, desktop applications, AI integrations, complex system architecture, hackathons, bootcamps, tech challenges and open-source collaboration.
-
-Contact: ephraimlifanjos@gmail.com
+Open to: websites, mobile apps, desktop applications, AI systems, payment integrations, hackathons, bootcamps, technology challenges, open source and software architecture collaboration.

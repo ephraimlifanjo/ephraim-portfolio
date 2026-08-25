@@ -1,12 +1,14 @@
 import "./globals.css";
 import { site, socials } from "@/data/site";
+import { languageAlternates, supportedLocales } from "@/data/i18n";
 
-const title = "Ephraim Lifanjo — Software Engineer | Web, Mobile, Desktop & AI";
-const description = "Ephraim Lifanjo is a Cameroon-based software engineer building full-stack web, mobile and desktop products, complex software architectures, APIs and practical AI integrations from scratch.";
+const title = "Ephraim Lifanjo | Software Engineer, Web, Mobile, Desktop and AI";
+const description = "Ephraim Lifanjo is a Cameroon based software engineer building full stack web, mobile and desktop products, complex architectures, payment and Mobile Money integrations, APIs and practical AI systems from scratch.";
 
 export const viewport = {
   width: "device-width",
   initialScale: 1,
+  viewportFit: "cover",
   colorScheme: "light dark",
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "#f7f4ee" },
@@ -19,30 +21,37 @@ export const metadata = {
   applicationName: "Ephraim Lifanjo Portfolio",
   title: {
     default: title,
-    template: "%s · Ephraim Lifanjo",
+    template: "%s | Ephraim Lifanjo",
   },
   description,
   keywords: [
     "Ephraim Lifanjo",
     "Ephraim Lifanjo Sewa",
     "software engineer Cameroon",
-    "Cameroon software engineer",
     "full stack developer Cameroon",
     "web developer Cameroon",
     "mobile app developer Cameroon",
     "desktop app developer Cameroon",
-    "React developer Cameroon",
-    "Next.js developer Cameroon",
+    "JavaScript developer",
+    "TypeScript developer",
+    "Python developer",
+    "C++ developer",
+    "React developer",
+    "Next.js developer",
     "Svelte developer",
     "React Native developer",
     "Expo developer",
     "Node.js developer",
     "Express.js developer",
-    "JavaScript developer",
-    "Python developer",
-    "C++ developer",
+    "NestJS developer",
     "PostgreSQL developer",
     "Firebase developer",
+    "Supabase developer",
+    "daisyUI developer",
+    "payment API integration",
+    "Mobile Money integration",
+    "MTN Mobile Money integration",
+    "Orange Money integration",
     "software architecture",
     "system architecture",
     "AI integration",
@@ -51,7 +60,7 @@ export const metadata = {
     "OCR automation",
     "hackathon developer",
     "bootcamp collaborator",
-    "Africa software engineer",
+    "African software engineer",
   ],
   authors: [{ name: site.fullName, url: site.url }],
   creator: site.fullName,
@@ -59,12 +68,11 @@ export const metadata = {
   category: "technology",
   classification: "Software Engineering Portfolio",
   referrer: "origin-when-cross-origin",
-  formatDetection: {
-    email: false,
-    address: false,
-    telephone: false,
+  alternates: {
+    canonical: "/",
+    languages: languageAlternates,
   },
-  alternates: { canonical: "/" },
+  formatDetection: { email: false, address: false, telephone: false },
   icons: {
     icon: [{ url: "/icon.svg", type: "image/svg+xml" }],
     shortcut: ["/icon.svg"],
@@ -84,11 +92,11 @@ export const metadata = {
     siteName: "Ephraim Lifanjo",
     locale: "en_CM",
     images: [{
-      url: "/ephraim.webp",
-      width: 296,
-      height: 402,
-      alt: "Ephraim Lifanjo — Software Engineer",
-      type: "image/webp",
+      url: "/card.png",
+      width: 1200,
+      height: 630,
+      alt: "Ephraim Lifanjo, Software Engineer",
+      type: "image/png",
     }],
   },
   twitter: {
@@ -96,7 +104,7 @@ export const metadata = {
     title,
     description,
     creator: "@EphraimLifanjo",
-    images: ["/ephraim.webp"],
+    images: ["/card.png"],
   },
   robots: {
     index: true,
@@ -122,9 +130,7 @@ export const metadata = {
   },
 };
 
-const sameAs = socials
-  .filter((item) => item.href.startsWith("http"))
-  .map((item) => item.href);
+const sameAs = socials.filter((item) => item.href.startsWith("http")).map((item) => item.href);
 
 const structuredData = {
   "@context": "https://schema.org",
@@ -148,22 +154,29 @@ const structuredData = {
       sameAs,
       knowsAbout: [
         "Software Engineering",
-        "Full-stack Development",
+        "Full Stack Development",
         "Web Development",
         "Mobile Application Development",
         "Desktop Application Development",
         "JavaScript",
+        "TypeScript",
         "Python",
         "C++",
         "React",
         "Next.js",
-        "Svelte",
+        "SvelteKit",
         "React Native",
         "Expo",
         "Node.js",
         "Express.js",
+        "NestJS",
         "PostgreSQL",
         "Firebase",
+        "Supabase",
+        "Payment APIs",
+        "Mobile Money Integration",
+        "MTN Mobile Money",
+        "Orange Money",
         "Software Architecture",
         "Artificial Intelligence Integration",
         "OCR",
@@ -174,9 +187,9 @@ const structuredData = {
       "@type": "WebSite",
       "@id": `${site.url}/#website`,
       url: site.url,
-      name: "Ephraim Lifanjo — Software Engineer",
+      name: "Ephraim Lifanjo | Software Engineer",
       description,
-      inLanguage: "en",
+      inLanguage: supportedLocales.map((item) => item.code),
       publisher: { "@id": `${site.url}/#person` },
     },
     {
@@ -202,6 +215,8 @@ export default function RootLayout({ children }) {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
         {sameAs.map((href) => <link key={href} rel="me" href={href} />)}
         <link rel="author" href={site.url} />
+        <link rel="preload" href="/ephraim.webp" as="image" type="image/webp" />
+        <link rel="dns-prefetch" href="https://formsubmit.co" />
       </head>
       <body>{children}</body>
     </html>

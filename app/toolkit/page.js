@@ -4,14 +4,18 @@ import {
   FaBrain,
   FaCloud,
   FaCode,
+  FaCreditCard,
   FaDatabase,
   FaDesktop,
   FaMobileAlt,
+  FaMoneyBillWave,
   FaPalette,
+  FaPlug,
   FaServer,
 } from "react-icons/fa";
 import {
   SiArduino,
+  SiCanva,
   SiCloudflare,
   SiCplusplus,
   SiCss,
@@ -24,11 +28,13 @@ import {
   SiFlutter,
   SiGit,
   SiGithub,
+  SiGithubactions,
   SiHtml5,
   SiJavascript,
   SiKotlin,
   SiMongodb,
   SiMysql,
+  SiNestjs,
   SiNextdotjs,
   SiNodedotjs,
   SiPostgresql,
@@ -36,86 +42,98 @@ import {
   SiPython,
   SiReact,
   SiSqlite,
+  SiSupabase,
   SiSvelte,
   SiTailwindcss,
+  SiTypescript,
   SiUnity,
   SiVercel,
 } from "react-icons/si";
+import Brand from "@/components/Brand";
 import EducationSheet from "@/components/EducationSheet";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 import OpenAIMark from "@/components/OpenAIMark";
 import ThemeToggle from "@/components/ThemeToggle";
 
 export const metadata = {
   title: "Engineering Toolkit",
-  description: "The engineering toolkit of Ephraim Lifanjo: JavaScript, Python, C++, React, Next.js, Svelte, React Native, Expo, Node.js, Express, databases, cloud, AI and product engineering.",
-  alternates: { canonical: "/toolkit" },
+  description: "Ephraim Lifanjo's engineering toolkit: JavaScript, TypeScript, Python, C++, React, Next.js, Svelte, React Native, Expo, Node.js, Express, NestJS, databases, payment APIs, Mobile Money, cloud, AI and software architecture.",
+  alternates: { canonical: "/toolkit/" },
 };
 
 export const revalidate = false;
 
 const groups = [
   {
-    title: "Languages & foundations",
+    title: "Languages and foundations",
     emoji: "⌨️",
     icon: FaCode,
     items: [
-      ["JavaScript", SiJavascript], ["Python", SiPython], ["C++", SiCplusplus], ["HTML5", SiHtml5], ["CSS3", SiCss], ["Git", SiGit], ["GitHub", SiGithub],
+      ["JavaScript", SiJavascript], ["TypeScript", SiTypescript], ["Python", SiPython], ["C++", SiCplusplus], ["HTML5", SiHtml5], ["CSS3", SiCss], ["Git", SiGit], ["GitHub", SiGithub],
     ],
   },
   {
-    title: "Frontend & web",
+    title: "Frontend and web",
     emoji: "🌐",
     icon: FaDesktop,
     items: [
-      ["React", SiReact], ["Next.js", SiNextdotjs], ["Svelte / SvelteKit", SiSvelte], ["Tailwind CSS", SiTailwindcss],
+      ["React", SiReact], ["Next.js", SiNextdotjs], ["Svelte and SvelteKit", SiSvelte], ["Tailwind CSS", SiTailwindcss], ["daisyUI", FaPalette], ["Responsive UI", FaDesktop],
     ],
   },
   {
-    title: "Mobile & desktop",
+    title: "Mobile and desktop",
     emoji: "📱",
     icon: FaMobileAlt,
     items: [
-      ["React Native", SiReact], ["Expo", SiExpo], ["Electron", SiElectron], ["Flutter", SiFlutter], ["Kotlin", SiKotlin], ["Unity", SiUnity], ["Arduino / ESP32", SiArduino],
+      ["React Native", SiReact], ["Expo", SiExpo], ["Electron", SiElectron], ["Flutter", SiFlutter], ["Kotlin", SiKotlin], ["Unity", SiUnity], ["Arduino and ESP32", SiArduino],
     ],
   },
   {
-    title: "Backend & APIs",
+    title: "Backend and APIs",
     emoji: "⚙️",
     icon: FaServer,
     items: [
-      ["Node.js", SiNodedotjs], ["Express", SiExpress], ["REST APIs", FaServer], ["Prisma", SiPrisma],
+      ["Node.js", SiNodedotjs], ["Express", SiExpress], ["NestJS", SiNestjs], ["REST APIs", FaPlug], ["Webhooks", FaPlug], ["Prisma", SiPrisma], ["Auth integrations", FaServer],
     ],
   },
   {
-    title: "Data & persistence",
+    title: "Payments and Mobile Money",
+    emoji: "💳",
+    icon: FaCreditCard,
+    items: [
+      ["Payment APIs", FaCreditCard], ["Mobile Money integration", FaMoneyBillWave], ["MTN Mobile Money", FaMobileAlt], ["Orange Money", FaMobileAlt], ["Payment webhooks", FaPlug], ["Secure callbacks", FaServer],
+    ],
+  },
+  {
+    title: "Data and persistence",
     emoji: "🗄️",
     icon: FaDatabase,
     items: [
-      ["PostgreSQL", SiPostgresql], ["MySQL", SiMysql], ["SQLite", SiSqlite], ["MongoDB", SiMongodb], ["Firebase", SiFirebase], ["Turso", FaDatabase],
+      ["PostgreSQL", SiPostgresql], ["MySQL", SiMysql], ["SQLite", SiSqlite], ["MongoDB", SiMongodb], ["Firebase", SiFirebase], ["Supabase", SiSupabase], ["Turso", FaDatabase],
     ],
   },
   {
-    title: "Cloud, shipping & tooling",
+    title: "Cloud, shipping and tooling",
     emoji: "☁️",
     icon: FaCloud,
     items: [
-      ["Vercel", SiVercel], ["Cloudflare", SiCloudflare], ["Docker", SiDocker], ["CI/CD", FaCloud], ["Cloudinary", FaCloud],
+      ["Vercel", SiVercel], ["Cloudflare", SiCloudflare], ["Docker", SiDocker], ["GitHub Actions", SiGithubactions], ["CI and CD", FaCloud], ["Cloudinary", FaCloud],
     ],
   },
   {
-    title: "AI & intelligent systems",
+    title: "AI and intelligent systems",
     emoji: "🧠",
     icon: FaBrain,
     items: [
-      ["OpenAI / ChatGPT", OpenAIMark], ["AI integration", FaBrain], ["OCR & local ML workflows", FaBrain], ["Automation", FaBrain], ["System architecture", FaServer],
+      ["OpenAI and ChatGPT", OpenAIMark], ["AI integration", FaBrain], ["OCR", FaBrain], ["Local ML workflows", FaBrain], ["Automation", FaBrain], ["System architecture", FaServer],
     ],
   },
   {
-    title: "Product & design workflow",
+    title: "Product, design and growth",
     emoji: "🎨",
     icon: FaPalette,
     items: [
-      ["Figma", SiFigma], ["Canva", FaPalette], ["UX thinking", FaPalette], ["Responsive design", FaDesktop], ["SEO", FaCode],
+      ["Figma", SiFigma], ["Canva", SiCanva], ["UX thinking", FaPalette], ["Accessibility", FaDesktop], ["Technical SEO", FaCode], ["International SEO", FaCode],
     ],
   },
 ];
@@ -124,23 +142,24 @@ export default function ToolkitPage() {
   return (
     <main className="toolkit-page">
       <header className="site-header shell">
-        <Link href="/" className="brand"><span className="brand-mark">EP</span><span>Ephraim.</span></Link>
+        <Brand />
         <div className="nav-links">
           <EducationSheet />
+          <LanguageSwitcher currentLocale="en" />
           <ThemeToggle />
         </div>
       </header>
 
       <section className="toolkit-hero shell">
-        <Link className="back-link" href="/"><FaArrowLeft /> Back home</Link>
+        <Link className="back-link" href="/"><FaArrowLeft aria-hidden="true" /> Back home</Link>
         <p className="kicker">🧰 Engineering toolkit</p>
         <h1>The tools I use to turn ideas into working systems.</h1>
         <p>
-          My stack spans product interfaces, mobile and desktop apps, backend APIs, data, deployment, intelligent features and architecture. I choose tools around the problem — not the other way around.
+          My stack covers interfaces, mobile and desktop apps, backend APIs, data, payments, Mobile Money, deployment, intelligent features and architecture. I choose tools around the problem, not the other way around.
         </p>
         <div className="toolkit-actions">
           <EducationSheet />
-          <a className="btn btn-primary" href="mailto:ephraimlifanjos@gmail.com?subject=Tech%20collaboration%20with%20Ephraim">Build something together ✨</a>
+          <a className="btn btn-primary" href="/#collaborate">Build something together ✨</a>
         </div>
       </section>
 
@@ -161,10 +180,10 @@ export default function ToolkitPage() {
         })}
       </section>
 
-      <section className="toolkit-note shell">
+      <section className="toolkit-note shell content-auto">
         <p className="kicker">How I work 🚀</p>
         <h2>Architecture first. Clear interfaces. Practical infrastructure. Ship, learn, improve.</h2>
-        <p>I’m especially interested in systems that combine web, mobile, backend, offline data, automation and AI without making the product unnecessarily complicated.</p>
+        <p>I am especially interested in systems that combine web, mobile, backend, offline data, payments, automation and AI without making the product unnecessarily complicated.</p>
       </section>
 
       <footer className="footer shell"><span>© 2026 Ephraim Lifanjo.</span><Link href="/#collaborate">Collaborate →</Link></footer>

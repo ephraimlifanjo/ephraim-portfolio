@@ -1,5 +1,6 @@
 import {
   FaBriefcase,
+  FaComments,
   FaDev,
   FaEnvelope,
   FaFacebook,
@@ -24,6 +25,7 @@ const icons = {
   reddit: FaRedditAlien,
   facebook: FaFacebook,
   jobbers: FaBriefcase,
+  dikalo: FaComments,
   indiepage: FaGlobe,
   whatsapp: FaWhatsapp,
   email: FaEnvelope,
@@ -35,7 +37,14 @@ export default function SocialLinks({ compact = false }) {
       {socials.map((social) => {
         const Icon = icons[social.key] || FaGlobe;
         return (
-          <a key={social.key} href={social.href} target={social.href.startsWith("http") ? "_blank" : undefined} rel="noreferrer" aria-label={social.label}>
+          <a
+            key={social.key}
+            href={social.href}
+            target={social.href.startsWith("http") ? "_blank" : undefined}
+            rel={social.href.startsWith("http") ? "me noopener noreferrer" : undefined}
+            aria-label={social.label}
+            title={social.label}
+          >
             <Icon aria-hidden="true" />
             {!compact && <span>{social.label}</span>}
           </a>

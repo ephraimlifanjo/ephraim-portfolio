@@ -1,5 +1,3 @@
-export const dynamic = "force-static";
-
 const allowedBots = [
   "Googlebot",
   "GoogleOther",
@@ -11,6 +9,12 @@ const allowedBots = [
   "Bravebot",
   "Qwantify",
   "Slurp",
+  "PetalBot",
+  "Sogou web spider",
+  "Amazonbot",
+  "Bytespider",
+  "CCBot",
+  "YouBot",
   "facebookexternalhit",
   "Twitterbot",
   "LinkedInBot",
@@ -22,7 +26,10 @@ const allowedBots = [
   "ChatGPT-User",
   "PerplexityBot",
   "ClaudeBot",
+  "meta-externalagent",
 ];
+
+export const dynamic = "force-static";
 
 export default function robots() {
   return {

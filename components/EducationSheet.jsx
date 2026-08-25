@@ -17,8 +17,8 @@ export default function EducationSheet() {
 
   return (
     <>
-      <button className="btn btn-ghost" type="button" onClick={() => setOpen(true)}>
-        <FaGraduationCap aria-hidden="true" /> Education path
+      <button className="btn btn-ghost education-button" type="button" onClick={() => setOpen(true)}>
+        <FaGraduationCap aria-hidden="true" /> Education
       </button>
 
       {open && (
@@ -34,10 +34,10 @@ export default function EducationSheet() {
             <div className="sheet-head">
               <div>
                 <p className="kicker">🎓 Academic path</p>
-                <h2 id="education-title">From GCE to B.Tech</h2>
+                <h2 id="education-title">Education and current degrees</h2>
               </div>
               <button className="icon-button" type="button" onClick={() => setOpen(false)} aria-label="Close education panel">
-                <FaTimes />
+                <FaTimes aria-hidden="true" />
               </button>
             </div>
             <ol className="timeline">
