@@ -1,12 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FaArrowRight, FaBrain, FaCode, FaEnvelope, FaLaptopCode, FaWhatsapp } from "react-icons/fa";
+import { FaArrowRight, FaEnvelope, FaWhatsapp } from "react-icons/fa";
 import Brand from "@/components/Brand";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import ThemeToggle from "@/components/ThemeToggle";
 import SocialLinks from "@/components/SocialLinks";
 import { collaborationTypes, site } from "@/data/site";
 import { getLocaleInfo, localePath } from "@/data/i18n";
+
+const cardEmojis = ["💻", "🏗️", "🧠"];
 
 export default function PortfolioPage({ locale = "en", dictionary: t }) {
   const localeInfo = getLocaleInfo(locale);
@@ -61,21 +63,18 @@ export default function PortfolioPage({ locale = "en", dictionary: t }) {
           <h2>{t.whatTitle}</h2>
         </div>
         <div className="statement-grid">
-          <article>
-            <FaCode aria-hidden="true" />
-            <h3>{t.cards[0][0]}</h3>
-            <p>{t.cards[0][1]}</p>
-          </article>
-          <article>
-            <FaLaptopCode aria-hidden="true" />
-            <h3>{t.cards[1][0]}</h3>
-            <p>{t.cards[1][1]}</p>
-          </article>
-          <article>
-            <FaBrain aria-hidden="true" />
-            <h3>{t.cards[2][0]}</h3>
-            <p>{t.cards[2][1]}</p>
-          </article>
+          {t.cards.map((card, index) => (
+            <article key={card[0]}>
+              <span
+                aria-hidden="true"
+                style={{ display: "block", fontSize: 30, lineHeight: 1, marginBottom: 42 }}
+              >
+                {cardEmojis[index] || "✨"}
+              </span>
+              <h3>{card[0]}</h3>
+              <p>{card[1]}</p>
+            </article>
+          ))}
         </div>
       </section>
 
@@ -94,8 +93,8 @@ export default function PortfolioPage({ locale = "en", dictionary: t }) {
           <h2>{t.contactTitle}</h2>
           <p>{t.contactText}</p>
           <div className="contact-direct">
-            <a href={`mailto:${site.email}`}><FaEnvelope aria-hidden="true" /> {site.email}</a>
-            <a href={site.whatsapp} target="_blank" rel="noopener noreferrer"><FaWhatsapp aria-hidden="true" /> {site.phone}</a>
+            <a href={`mailto:${site.email}`}><FaEnvelope aria-hidden="true" style={{ color: "#ea4335" }} /> {site.email}</a>
+            <a href={site.whatsapp} target="_blank" rel="noopener noreferrer"><FaWhatsapp aria-hidden="true" style={{ color: "#25d366" }} /> {site.phone}</a>
           </div>
         </div>
 

@@ -1,5 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="EP monogram">
-  <rect width="64" height="64" rx="18" fill="#11110f"/>
-  <path d="M20 13v38h8V39h10.5C48 39 54 34 54 26S48 13 38.5 13H20Zm8 8h10c4.8 0 7.5 1.8 7.5 5s-2.7 5-7.5 5H28V21Z" fill="#fffdf8"/>
-  <path d="M31 22h11v3.8h-6.7v2.6h6.2v3.6h-6.2v2.6H42v3.8H31V22Z" fill="#f1df52"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Ephraim Lifanjo mark">
+  <defs>
+    <linearGradient id="brand" x1="64" y1="64" x2="448" y2="448" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#06b6d4"/>
+      <stop offset=".5" stop-color="#2563eb"/>
+      <stop offset="1" stop-color="#7c3aed"/>
+    </linearGradient>
+  </defs>
+  <path d="M 180 153 L 150 161 L 129 172 L 114 183 L 93 206 L 79 231 L 72 253 L 70 264 L 71 303 L 77 324 L 89 348 L 100 363 L 123 384 L 148 398 L 173 406 L 200 409 L 224 407 L 250 400 L 281 383 L 300 366 L 319 339 L 304 333 L 293 349 L 280 363 L 263 376 L 243 386 L 212 393 L 182 392 L 160 386 L 141 377 L 117 358 L 101 337 L 95 326 L 88 306 L 86 294 L 86 266 L 88 254 L 101 223 L 112 208 L 126 194 L 138 185 L 155 176 L 187 168 L 224 168 L 236 152 Z M 442 284 L 440 275 L 431 260 L 417 251 L 402 247 L 394 247 L 378 250 L 362 258 L 350 269 L 336 289 L 352 295 L 362 280 L 370 272 L 386 264 L 403 263 L 415 268 L 422 275 L 425 281 L 424 298 L 414 312 L 399 321 L 391 323 L 376 323 L 287 291 L 258 284 L 223 283 L 203 286 L 179 294 L 177 293 L 293 131 L 303 120 L 315 118 L 323 122 L 329 131 L 329 140 L 327 144 L 319 151 L 301 152 L 290 168 L 321 167 L 332 162 L 339 155 L 344 146 L 345 140 L 344 126 L 339 116 L 325 105 L 319 103 L 304 103 L 292 108 L 283 117 L 141 315 L 153 326 L 170 315 L 196 304 L 224 299 L 249 299 L 276 304 L 364 336 L 377 339 L 390 339 L 406 335 L 418 329 L 429 320 L 439 304 Z" fill="url(#brand)" fill-rule="evenodd"/>
 </svg>

@@ -4,229 +4,175 @@
   <img src="./public/card.png" alt="Ephraim Lifanjo portfolio social card" width="760" />
 </p>
 
-A fast, static, multilingual software engineering portfolio built with Next.js and React. It is designed for strong crawlability, responsive mobile performance, international SEO and zero backend maintenance.
+A fast, static, multilingual software engineering portfolio built with Next.js and React. The site is designed for strong crawlability, mobile performance, international SEO and zero application-backend maintenance.
 
 <p align="center">
-  <img src="./public/icon.svg" alt="EP favicon" width="86" />
+  <img src="./app/icon.svg" alt="Ephraim Lifanjo brand mark" width="86" />
   &nbsp;&nbsp;&nbsp;
   <img src="./public/ephraim.webp" alt="Ephraim Lifanjo portrait" width="180" />
 </p>
 
-## What this implementation includes
+## Included
 
-- Static Next.js export: no application server, database or CMS is required.
-- Responsive layout: desktop, tablet and small mobile screens are covered.
-- System theme detection: light and dark modes can also be changed manually.
-- Multilingual discovery: English, French, German, Spanish, Portuguese, Italian, Chinese, Japanese, Korean, Arabic and Russian.
-- Automatic browser language detection: English remains the fallback language.
-- Search metadata: canonical URLs, hreflang alternates, Open Graph, X cards, Schema.org, sitemap and robots rules.
-- Search crawler support: Google, Bing, DuckDuckGo, Apple, Yandex, Baidu, Brave, Qwant and other compatible crawlers.
-- AI discovery files: llms.txt plus crawl rules for major AI search agents.
-- IndexNow key hosting for compatible search engines.
-- Contact without an application backend: FormSubmit, direct email and WhatsApp.
-- Local brand identity: EP favicon in the browser and the visible header.
-- Local inline technology icons through react-icons, avoiding fragile external icon URLs.
-- Photo hover interaction with a reduced motion fallback.
-- GitHub Actions production build check on every push to main.
+- Static Next.js export with CDN delivery.
+- Responsive desktop, tablet and small-screen layouts.
+- Light and dark themes with system detection.
+- A custom-built language picker with browser language detection.
+- English, French, German, Spanish, Portuguese, Italian, Chinese, Japanese, Korean, Arabic and Russian routes.
+- Canonical URLs, hreflang alternates, Open Graph, X cards, Schema.org, sitemap and robots rules.
+- Google, Bing, DuckDuckGo, Apple, Yandex, Baidu and other compatible crawler support.
+- `llms.txt` and IndexNow discovery files.
+- A transparent local SVG brand mark derived from the supplied logo artwork.
+- Local React SVG icons with explicit brand colors, including LinkedIn, GitHub, Canva, technology stacks and social profiles.
+- Contact through FormSubmit, direct email and WhatsApp.
+- Photo hover interaction with touch and reduced-motion fallbacks.
+- GitHub Actions production build verification on every push to `main`.
 
 ## Architecture
 
 ```mermaid
 flowchart TD
-  A[Next.js App Router] --> B[Static pages]
-  A --> C[Localized pages]
-  A --> D[Toolkit]
+  A[Next.js App Router] --> B[Static landing page]
+  A --> C[Localized static pages]
+  A --> D[Engineering toolkit]
   B --> E[Static export]
   C --> E
   D --> E
-  E --> F[public output]
-  F --> G[Vercel CDN]
-  B --> H[FormSubmit]
-  H --> I[Email inbox]
-  B --> J[WhatsApp and social profiles]
+  E --> F[Vercel CDN]
+  B --> G[FormSubmit]
+  B --> H[Email, WhatsApp and social profiles]
 ```
 
 ## Project structure
 
 ```text
 app/
-  [lang]/page.js       Localized static landing pages
-  toolkit/page.js      Engineering toolkit
-  layout.js            Global metadata and Schema.org
-  sitemap.js           Search sitemap
-  robots.js            Crawler rules
+  [lang]/page.js            Localized landing pages
+  toolkit/page.js           Engineering toolkit
+  icon.svg                  Transparent visible brand mark and favicon
+  layout.js                 Global metadata and structured data
+  sitemap.js                Search sitemap
+  robots.js                 Crawler rules
 components/
-  Brand.jsx            Header logo using the real favicon
-  PortfolioPage.jsx    Shared landing page UI
-  LanguageSwitcher.jsx Browser language detection and selector
-  SocialLinks.jsx      Local SVG social icons
-  EducationSheet.jsx   Academic bottom sheet
+  Brand.jsx                 Header brand
+  PortfolioPage.jsx         Shared landing page UI
+  LanguageSwitcher.jsx      Custom language picker and detection
+  LanguageSwitcher.module.css
+  SocialLinks.jsx           Colored social icons
+  ThemeToggle.jsx           Theme control
 data/
-  site.js              Profile, social links, education and collaboration data
-  i18n.js              Localized text and language configuration
+  site.js                   Profile, social links and collaboration data
+  i18n.js                   Locale configuration and translated copy
 public/
-  icon.svg              EP favicon and visible brand icon
-  ephraim.webp          Optimized portrait
-  card.png              Social sharing cover
-  llms.txt              Machine readable portfolio summary
+  ephraim.webp              Optimized portrait
+  card.png                  Social sharing cover
+  llms.txt                  Machine-readable portfolio summary
 scripts/
-  export-static.mjs     Copies the Next static export into public
+  export-static.mjs         Copies the Next static export into public
 ```
 
-## Reproduce this portfolio professionally
+## Reproduce the implementation
 
-### 1. Clone and install
+### 1. Install
 
 ```bash
 git clone https://github.com/ephraimlifanjo/ephraim-portfolio.git
 cd ephraim-portfolio
 npm install
+npm run dev
 ```
 
 ### 2. Replace identity assets
 
-Replace these files while keeping their names:
+Update these files while preserving their purpose:
 
 ```text
-public/icon.svg
-public/apple-touch-icon.png
+app/icon.svg
 public/ephraim.webp
 public/card.png
 ```
 
-Recommended dimensions:
+Use a square SVG viewBox for the mark, compressed WebP for the portrait and a 1200 by 630 social card.
 
-- Portrait: about 3:4 aspect ratio, WebP, compressed below 100 KB when possible.
-- Social card: 1200 by 630 pixels.
-- Apple icon: 180 by 180 pixels.
-- SVG favicon: square viewBox and simple geometry for sharp rendering at small sizes.
+### 3. Edit public profile data
 
-### 3. Edit profile data
+Update `data/site.js` for the name, professional title, contact links and social profiles. External profile URLs from this file are also included in Schema.org `sameAs` metadata.
 
-Open `data/site.js` and update:
+### 4. Configure languages
 
-```js
-export const site = {
-  name: "Your Name",
-  fullName: "Your Full Name",
-  title: "Your Professional Title",
-  email: "you@example.com",
-  phone: "+000000000",
-  whatsapp: "https://wa.me/000000000",
-  url: "https://your-domain.example",
-  location: "Your Country",
-};
-```
+`data/i18n.js` contains the supported locales and translated copy. English is the fallback. `LanguageSwitcher.jsx` detects a supported browser language, remembers the visitor preference in `localStorage` and navigates to a crawlable static locale route.
 
-Add or remove social profiles in the `socials` array. Keep external profiles in Schema.org `sameAs` by leaving them in this data source.
+### 5. Configure contact
 
-### 4. Configure education
-
-Edit the `education` array in `data/site.js`. Keep entries concise. The UI displays them in a bottom sheet and does not require a separate education page.
-
-### 5. Configure languages
-
-`data/i18n.js` contains all supported locales and the visible translated copy. English is the default. `LanguageSwitcher.jsx` reads `navigator.language`, stores the preference in localStorage and redirects only when a supported non English language is detected.
-
-Each localized route is generated statically through `app/[lang]/page.js`, which makes every language crawlable without a server.
-
-### 6. Configure the contact form
-
-The form uses FormSubmit:
+The collaboration form posts directly to FormSubmit:
 
 ```html
 <form action="https://formsubmit.co/you@example.com" method="POST">
 ```
 
-No API key is required. FormSubmit can require a one time confirmation from the destination inbox. Direct email and WhatsApp links are kept as independent fallbacks.
+FormSubmit may require a one-time inbox confirmation for the receiving address. Email and WhatsApp remain direct alternatives.
 
-### 7. SEO checklist
+### 6. SEO checklist
 
-Before deployment, update:
+Review these files before using the template for another person or domain:
 
-- `app/layout.js`: title, description, keywords, Open Graph and structured data.
+- `app/layout.js`: title, description, keywords, Open Graph and Schema.org.
 - `app/sitemap.js`: canonical hostname and localized routes.
-- `app/robots.js`: sitemap hostname.
-- `public/llms.txt`: profile and technology summary.
-- `public/7ca8393296cfd5bb7543eabc068cc05e.txt`: replace this IndexNow key if you create your own.
+- `app/robots.js`: crawler access and sitemap URL.
+- `public/llms.txt`: concise identity and technology summary.
+- `public/7ca8393296cfd5bb7543eabc068cc05e.txt`: IndexNow key.
 
-Do not add hundreds of repeated keywords. Search visibility is improved by descriptive content, semantic HTML, valid structured data, fast pages, crawlable localized URLs, trustworthy external profiles and useful backlinks.
+Avoid keyword stuffing. Search visibility is improved through useful text, semantic HTML, stable canonical URLs, fast delivery, crawlable locale routes, trustworthy external profiles and genuine backlinks.
 
-### 8. Build the production export
+### 7. Production build
 
 ```bash
 npm run build
 ```
 
-The build uses Next.js static export. `scripts/export-static.mjs` then places the generated site in `public/` for the current Vercel static project configuration.
+The project exports static HTML and assets. `scripts/export-static.mjs` places the generated result in `public/` for the current Vercel configuration.
 
-### 9. Deploy on Vercel
+### 8. Vercel
 
-Use these project settings when deploying this repository as a static export:
+Current production configuration:
 
 ```text
 Build command: npm run build
 Output directory: public
 Node.js: 22 or newer
-Environment variables: none required for the portfolio
+Environment variables: none required
 ```
 
-The production domain for this repository is:
+Production URL:
 
 ```text
 https://ephraimlifanjo.vercel.app
 ```
 
-### 10. Verify after deployment
+## Performance decisions
 
-Check these URLs:
-
-```text
-/
-/toolkit/
-/fr/
-/de/
-/es/
-/zh/
-/ja/
-/ko/
-/ar/
-/robots.txt
-/sitemap.xml
-/llms.txt
-```
-
-Then verify the production HTML contains canonical metadata, an Open Graph cover, structured data and hreflang alternate URLs.
-
-## Performance design decisions
-
-- No custom web font request.
+- No external web-font request.
+- Static HTML and CDN caching.
 - Optimized WebP portrait.
-- Static HTML and CDN delivery.
-- Inline SVG icons through react-icons.
-- `content-visibility` for lower page sections.
-- Minimal client JavaScript limited to theme, language and the education sheet.
-- Reduced motion support.
-- No analytics SDK, database SDK or runtime API client in the landing page.
+- Local SVG favicon and local icon components.
+- No external icon CDN.
+- `content-visibility` for lower-page sections.
+- Client JavaScript limited to theme and language interactions.
+- No database SDK, analytics SDK or runtime API client on the landing page.
+- Reduced-motion and touch-device fallbacks.
 
-## Development
+## Validation
 
-```bash
-npm run dev
-```
-
-Open `http://localhost:3000`.
-
-## Production validation
+After every change:
 
 ```bash
 npm run build
 ```
 
-GitHub Actions runs the same production build on every push to `main`.
+Then verify `/`, `/toolkit/`, several locale routes, `/robots.txt`, `/sitemap.xml`, `/llms.txt` and `/icon.svg`. GitHub Actions performs the production build automatically on pushes to `main`.
 
 ## License and reuse
 
-The code structure can be adapted for another personal portfolio. Replace the personal portrait, brand assets, profile data, social accounts and written biography before publishing your own version.
+The code structure may be adapted for another portfolio. Replace the portrait, mark, public profile information, contact details, social accounts and written biography before publishing it.
 
 © 2026 Ephraim Lifanjo Sewa.

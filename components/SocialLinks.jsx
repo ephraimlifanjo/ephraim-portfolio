@@ -31,11 +31,29 @@ const icons = {
   email: FaEnvelope,
 };
 
+const brandColors = {
+  github: "#6e5494",
+  linkedin: "#0a66c2",
+  x: "#536471",
+  bluesky: "#1185fe",
+  dev: "#3b49df",
+  stackoverflow: "#f48024",
+  reddit: "#ff4500",
+  facebook: "#1877f2",
+  jobbers: "#0ea5e9",
+  dikalo: "#f59e0b",
+  indiepage: "#8b5cf6",
+  whatsapp: "#25d366",
+  email: "#ea4335",
+};
+
 export default function SocialLinks({ compact = false }) {
   return (
     <div className={compact ? "socials socials--compact" : "socials"}>
       {socials.map((social) => {
         const Icon = icons[social.key] || FaGlobe;
+        const color = brandColors[social.key] || "#2563eb";
+
         return (
           <a
             key={social.key}
@@ -44,8 +62,9 @@ export default function SocialLinks({ compact = false }) {
             rel={social.href.startsWith("http") ? "me noopener noreferrer" : undefined}
             aria-label={social.label}
             title={social.label}
+            style={{ borderColor: `${color}55` }}
           >
-            <Icon aria-hidden="true" />
+            <Icon aria-hidden="true" style={{ color }} />
             {!compact && <span>{social.label}</span>}
           </a>
         );

@@ -25,14 +25,6 @@ export const socials = [
   { key: "email", label: "Email", href: "mailto:ephraimlifanjos@gmail.com" },
 ];
 
-export const education = [
-  { stage: "GCE Ordinary Level", note: "General Certificate of Education: Ordinary Level" },
-  { stage: "GCE Advanced Level", note: "General Certificate of Education: Advanced Level" },
-  { stage: "Higher National Diploma, Software Engineering", note: "Higher Institute ISMAT: Software Engineering" },
-  { stage: "Bachelor of Technology", note: "University Institute of Technology of Ngaoundéré: currently pursuing" },
-  { stage: "Bachelor of Science", note: "Higher Institute ISMAT: currently pursuing" },
-];
-
 export const collaborationTypes = [
   "Website",
   "Mobile app",

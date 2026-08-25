@@ -12,8 +12,6 @@ DEV.to: https://dev.to/ephraim_lifanjo
 
 Core technologies: JavaScript, TypeScript, Python, C++, React, Next.js, SvelteKit, React Native, Expo, Electron, Node.js, Express.js, NestJS, PostgreSQL, MySQL, SQLite, MongoDB, Firebase, Supabase, Vercel, Cloudflare, Docker, payment APIs, Mobile Money, MTN Mobile Money, Orange Money and AI integration.
 
-Education: GCE Ordinary Level, GCE Advanced Level, Higher National Diploma in Software Engineering at Higher Institute ISMAT, Bachelor of Technology at the University Institute of Technology of Ngaoundéré, Bachelor of Science at Higher Institute ISMAT.
-
 Languages available on the portfolio: English, French, German, Spanish, Portuguese, Italian, Chinese, Japanese, Korean, Arabic and Russian. English is the default when the visitor language is not supported.
 
 Open to: websites, mobile apps, desktop applications, AI systems, payment integrations, hackathons, bootcamps, technology challenges, open source and software architecture collaboration.
