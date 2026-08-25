@@ -1,12 +1,11 @@
 {
   "name": "ephraim-lifanjo-portfolio",
-  "description": "Multilingual portfolio of Ephraim Lifanjo Sewa - Full Stack Web & Mobile Developer and Product Engineer.",
-  "version": "1.0.0",
+  "description": "SEO-focused personal portfolio of Ephraim Lifanjo Sewa — software engineer, full-stack web, mobile and desktop developer, architecture and AI integration.",
+  "version": "2.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "build": "next build && node scripts/export-static.mjs",
     "lint": "eslint ."
   },
   "dependencies": {
