@@ -1,0 +1,13 @@
+/* TEAM */
+Developer: Ephraim Lifanjo Sewa
+Role: Software Engineer · Full-stack Web, Mobile & Desktop Developer
+Location: Cameroon
+Contact: ephraimlifanjos@gmail.com
+Website: https://ephraimlifanjo.vercel.app
+GitHub: https://github.com/ephraimlifanjo
+
+/* SITE */
+Purpose: Personal software engineering portfolio and collaboration contact page
+Stack: Next.js · React · JavaScript · Static Export
+Language: English
+Last update: 2026-08-25
