@@ -25,6 +25,11 @@ export const socials = [
   { key: "email", label: "Email", href: "mailto:ephraimlifanjos@gmail.com" },
 ];
 
+export const qualifications = [
+  { emoji: "🎓", label: "Higher National Diploma (HND)" },
+  { emoji: "📘", label: "Bachelor’s Degree" },
+];
+
 export const collaborationTypes = [
   "Website",
   "Mobile app",
