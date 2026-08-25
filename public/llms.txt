@@ -1,0 +1,21 @@
+# Ephraim Lifanjo
+
+> Personal software engineering portfolio of Ephraim Lifanjo Sewa, a Cameroon-based software engineer focused on full-stack web, mobile, desktop software, architecture and practical AI integration.
+
+Canonical site: https://ephraimlifanjo.vercel.app/
+Toolkit: https://ephraimlifanjo.vercel.app/toolkit/
+GitHub: https://github.com/ephraimlifanjo
+LinkedIn: https://www.linkedin.com/in/ephraim-lifanjo-5b2156329
+Bluesky: https://bsky.app/profile/ephraim-lifanjo.bsky.social
+DEV.to: https://dev.to/ephraim_lifanjo
+Jobbers: https://www.jobbers.io/fr/author/ephraim-lifanjo/
+
+## Technical focus
+
+JavaScript, Python, C++, React, Next.js, Svelte/SvelteKit, React Native, Expo, Node.js, Express.js, PostgreSQL, MySQL, SQLite, MongoDB, Firebase, Vercel, Cloudflare, Docker, software architecture, OCR, automation and AI integration.
+
+## Collaboration
+
+Open to websites, mobile apps, desktop applications, AI integrations, complex system architecture, hackathons, bootcamps, tech challenges and open-source collaboration.
+
+Contact: ephraimlifanjos@gmail.com
