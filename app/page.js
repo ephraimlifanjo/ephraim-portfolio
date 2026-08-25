@@ -103,9 +103,11 @@ export default function Home() {
         </div>
 
         <form className="form-card" action={`https://formsubmit.co/${site.email}`} method="POST">
-          <input type="hidden" name="_subject" value="New portfolio collaboration" />
+          <input type="hidden" name="_subject" value="New collaboration from ephraimlifanjo.vercel.app" />
           <input type="hidden" name="_captcha" value="false" />
           <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_next" value={`${site.url}/thanks/`} />
+          <input type="text" name="_honey" tabIndex="-1" autoComplete="off" aria-hidden="true" style={{ display: "none" }} />
           <label>
             <span>Name</span>
             <input name="name" placeholder="Your name" autoComplete="name" required />
@@ -125,6 +127,9 @@ export default function Home() {
             <textarea name="message" rows="6" placeholder="Tell me about the idea, challenge or event…" required />
           </label>
           <button className="btn btn-primary form-submit" type="submit">Send message <FaArrowRight /></button>
+          <p className="form-fallback">
+            No account or API key is required. If the form service is unavailable, you can also <a href={`mailto:${site.email}?subject=Collaboration%20with%20Ephraim`}>email me directly</a> or use WhatsApp.
+          </p>
         </form>
       </section>
 
