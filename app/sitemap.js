@@ -1,3 +1,5 @@
+export const dynamic = "force-static";
+
 export default function sitemap() {
   const base = "https://ephraimlifanjo.vercel.app";
   const lastModified = new Date("2026-08-25T00:00:00.000Z");
