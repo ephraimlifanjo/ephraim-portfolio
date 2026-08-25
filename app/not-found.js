@@ -2,12 +2,11 @@ import Link from "next/link";
 
 export default function NotFound() {
   return (
-    <main className="not-found">
+    <main className="shell" style={{ minHeight: "100svh", display: "grid", placeItems: "center", textAlign: "center" }}>
       <div>
-        <p className="section-index">404 / NOT FOUND</p>
-        <h1>This page isn&apos;t here. 👀</h1>
-        <p>The link may be old, or the page may have moved.</p>
-        <Link className="button button-dark" href="/">Back home →</Link>
+        <p className="kicker">404 · Lost in the stack 🧭</p>
+        <h1 style={{ fontSize: "clamp(52px,10vw,100px)", letterSpacing: "-.07em", lineHeight: ".9", margin: 0 }}>This page isn’t here.</h1>
+        <Link className="btn btn-primary" href="/" style={{ marginTop: 30 }}>Back home</Link>
       </div>
     </main>
   );

@@ -1,17 +1,12 @@
 export default function manifest() {
   return {
-    name: "Ephraim Lifanjo Sewa — Software Engineer",
+    name: "Ephraim Lifanjo — Software Engineer",
     short_name: "Ephraim",
-    description: "Software engineering portfolio of Ephraim Lifanjo Sewa.",
+    description: "Personal developer portfolio of Ephraim Lifanjo.",
     start_url: "/",
     display: "standalone",
-    background_color: "#090a0b",
-    theme_color: "#c8ff42",
-    orientation: "portrait-primary",
-    icons: [
-      { src: "/icons/icon-192.png", sizes: "192x192", type: "image/png", purpose: "any" },
-      { src: "/icons/icon-512.png", sizes: "512x512", type: "image/png", purpose: "any" },
-      { src: "/icons/icon-512-maskable.png", sizes: "512x512", type: "image/png", purpose: "maskable" }
-    ]
+    background_color: "#f7f4ee",
+    theme_color: "#11110f",
+    icons: [{ src: "/icon.svg", sizes: "any", type: "image/svg+xml" }],
   };
 }
