@@ -5,7 +5,7 @@ import Brand from "@/components/Brand";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import ThemeToggle from "@/components/ThemeToggle";
 import SocialLinks from "@/components/SocialLinks";
-import { collaborationTypes, site } from "@/data/site";
+import { collaborationTypes, qualifications, site } from "@/data/site";
 import { getLocaleInfo, localePath } from "@/data/i18n";
 
 const cardEmojis = ["💻", "🏗️", "🧠"];
@@ -54,6 +54,36 @@ export default function PortfolioPage({ locale = "en", dictionary: t }) {
             <span className="portrait-shine" aria-hidden="true" />
           </div>
           <p className="portrait-note">Engineering, Product, Architecture, AI</p>
+          <ul
+            aria-label="Qualifications"
+            style={{
+              listStyle: "none",
+              padding: 0,
+              margin: "14px 0 0",
+              display: "grid",
+              gap: 8,
+            }}
+          >
+            {qualifications.map((item) => (
+              <li
+                key={item.label}
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 9,
+                  padding: "10px 12px",
+                  border: "1px solid var(--line)",
+                  borderRadius: 14,
+                  background: "var(--surface)",
+                  fontSize: 12,
+                  fontWeight: 800,
+                }}
+              >
+                <span aria-hidden="true" style={{ fontSize: 16 }}>{item.emoji}</span>
+                <span>{item.label}</span>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
