@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && node scripts/export-static.mjs",
+    "build": "next build --webpack && node scripts/export-static.mjs",
     "lint": "eslint ."
   },
   "dependencies": {
