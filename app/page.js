@@ -30,8 +30,8 @@ export default function Home() {
             <br />from scratch.
           </h1>
           <p className="hero-lead">
-            Full-stack web, mobile & desktop developer. I design complex architectures, build reliable products,
-            and integrate AI into real systems when it actually creates value.
+            Full-stack web, mobile & desktop developer. I model complex architectures, build reliable products,
+            and integrate AI into real systems when it creates meaningful value.
           </p>
           <div className="hero-actions">
             <a className="btn btn-primary" href="#collaborate">Collaborate with me <FaArrowRight /></a>
@@ -44,12 +44,12 @@ export default function Home() {
           <div className="portrait-badge">open to ideas ✨</div>
           <div className="portrait-frame">
             <Image
-              src="/ephraim.jpg"
-              alt="Portrait of Ephraim Lifanjo"
-              width={260}
-              height={353}
+              src="/ephraim.webp"
+              alt="Ephraim Lifanjo, software engineer"
+              width={296}
+              height={402}
               priority
-              sizes="(max-width: 760px) 72vw, 320px"
+              sizes="(max-width: 760px) 72vw, 330px"
             />
           </div>
           <p className="portrait-note">Engineering · Product · Architecture · AI</p>
