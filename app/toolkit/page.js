@@ -31,7 +31,6 @@ import {
   SiMysql,
   SiNextdotjs,
   SiNodedotjs,
-  SiOpenai,
   SiPostgresql,
   SiPrisma,
   SiPython,
@@ -43,6 +42,7 @@ import {
   SiVercel,
 } from "react-icons/si";
 import EducationSheet from "@/components/EducationSheet";
+import OpenAIMark from "@/components/OpenAIMark";
 import ThemeToggle from "@/components/ThemeToggle";
 
 export const metadata = {
@@ -107,7 +107,7 @@ const groups = [
     emoji: "🧠",
     icon: FaBrain,
     items: [
-      ["OpenAI / ChatGPT", SiOpenai], ["AI integration", FaBrain], ["OCR & local ML workflows", FaBrain], ["Automation", FaBrain], ["System architecture", FaServer],
+      ["OpenAI / ChatGPT", OpenAIMark], ["AI integration", FaBrain], ["OCR & local ML workflows", FaBrain], ["Automation", FaBrain], ["System architecture", FaServer],
     ],
   },
   {
