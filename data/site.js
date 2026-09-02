@@ -1,7 +1,7 @@
 export const site = {
   name: "Ephraim Lifanjo",
   fullName: "Ephraim Lifanjo Sewa",
-  title: "Software Engineer, Full Stack Web, Mobile and Desktop Developer",
+  title: "Product Engineer, Full Stack Web, Mobile and Desktop Developer",
   email: "ephraimlifanjos@gmail.com",
   phone: "+237 696 762 152",
   whatsapp: "https://wa.me/237696762152",
@@ -31,6 +31,8 @@ export const qualifications = [
 ];
 
 export const collaborationTypes = [
+  "Product engineering",
+  "Product from scratch",
   "Website",
   "Mobile app",
   "Desktop app",
