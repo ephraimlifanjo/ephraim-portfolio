@@ -29,10 +29,16 @@ export default function PortfolioPage({ locale = "en", dictionary: t }) {
       <section className="hero shell">
         <div className="hero-copy">
           <p className="kicker">{t.heroKicker}</p>
+          <p style={{ margin: "0 0 12px", fontSize: 13, fontWeight: 900, letterSpacing: ".08em", textTransform: "uppercase" }}>
+            Product Engineer · Founder · Full-stack builder
+          </p>
           <h1>
             {t.heroPrefix} <span className="marker">{t.heroFocus}</span><br />{t.heroSuffix}
           </h1>
           <p className="hero-lead">{t.heroLead}</p>
+          <p style={{ margin: "14px 0 0", maxWidth: 720, lineHeight: 1.7 }}>
+            I build products from scratch — from product thinking and UX to frontend, backend, mobile, payments, deployment and iteration with real users.
+          </p>
           <div className="hero-actions">
             <a className="btn btn-primary" href="#collaborate">{t.collaborateCta} <FaArrowRight aria-hidden="true" /></a>
             <Link className="btn btn-ghost" href="/toolkit/">{t.toolkitCta}</Link>
@@ -41,11 +47,11 @@ export default function PortfolioPage({ locale = "en", dictionary: t }) {
         </div>
 
         <div className="portrait-wrap">
-          <div className="portrait-badge">open to ideas ✨</div>
+          <div className="portrait-badge">building products from scratch ✨</div>
           <div className="portrait-frame" title="Ephraim Lifanjo">
             <Image
               src="/ephraim.webp"
-              alt="Ephraim Lifanjo, software engineer"
+              alt="Ephraim Lifanjo, product engineer"
               width={296}
               height={402}
               priority
@@ -53,7 +59,7 @@ export default function PortfolioPage({ locale = "en", dictionary: t }) {
             />
             <span className="portrait-shine" aria-hidden="true" />
           </div>
-          <p className="portrait-note">Engineering, Product, Architecture, AI</p>
+          <p className="portrait-note">Product Engineering, UX, Architecture, Mobile, Web, AI</p>
           <ul
             aria-label="Qualifications"
             style={{
@@ -144,7 +150,7 @@ export default function PortfolioPage({ locale = "en", dictionary: t }) {
           </label>
           <label>
             <span>{t.formType}</span>
-            <select name="collaboration" defaultValue="Website">
+            <select name="collaboration" defaultValue="Product engineering">
               {collaborationTypes.map((item) => <option key={item}>{item}</option>)}
             </select>
           </label>
@@ -167,7 +173,7 @@ export default function PortfolioPage({ locale = "en", dictionary: t }) {
 
       <footer className="footer shell">
         <span>© 2026 Ephraim Lifanjo.</span>
-        <span>{t.footer}</span>
+        <span>Product Engineer · {t.footer}</span>
       </footer>
     </main>
   );
