@@ -1,9 +1,29 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useSyncExternalStore } from "react";
 import { FaDesktop, FaMoon, FaSun } from "react-icons/fa";
 
 const modes = ["system", "light", "dark"];
+const THEME_KEY = "portfolio-theme";
+const THEME_EVENT = "portfolio-theme-change";
+
+function getMode() {
+  try {
+    const saved = window.localStorage.getItem(THEME_KEY);
+    return modes.includes(saved) ? saved : "system";
+  } catch {
+    return "system";
+  }
+}
+
+function subscribeMode(onChange) {
+  window.addEventListener("storage", onChange);
+  window.addEventListener(THEME_EVENT, onChange);
+  return () => {
+    window.removeEventListener("storage", onChange);
+    window.removeEventListener(THEME_EVENT, onChange);
+  };
+}
 
 function applyTheme(mode) {
   const root = document.documentElement;
@@ -12,14 +32,11 @@ function applyTheme(mode) {
 }
 
 export default function ThemeToggle() {
-  const [mode, setMode] = useState("system");
+  const mode = useSyncExternalStore(subscribeMode, getMode, () => "system");
 
   useEffect(() => {
-    const saved = localStorage.getItem("portfolio-theme");
-    const next = modes.includes(saved) ? saved : "system";
-    setMode(next);
-    applyTheme(next);
-  }, []);
+    applyTheme(mode);
+  }, [mode]);
 
   const Icon = useMemo(() => {
     if (mode === "light") return FaSun;
@@ -29,9 +46,13 @@ export default function ThemeToggle() {
 
   function cycle() {
     const next = modes[(modes.indexOf(mode) + 1) % modes.length];
-    setMode(next);
-    localStorage.setItem("portfolio-theme", next);
-    applyTheme(next);
+    try {
+      window.localStorage.setItem(THEME_KEY, next);
+    } catch {
+      applyTheme(next);
+      return;
+    }
+    window.dispatchEvent(new Event(THEME_EVENT));
   }
 
   return (
