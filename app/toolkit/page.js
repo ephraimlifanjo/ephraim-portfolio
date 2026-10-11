@@ -165,7 +165,7 @@ export default function ToolkitPage() {
           My stack covers interfaces, mobile and desktop apps, backend APIs, data, payments, Mobile Money, deployment, intelligent features and architecture. I choose tools around the problem, not the other way around.
         </p>
         <div className="toolkit-actions">
-          <a className="btn btn-primary" href="/#collaborate">Build something together ✨</a>
+          <Link className="btn btn-primary" href="/#collaborate">Build something together ✨</Link>
         </div>
       </section>
 
