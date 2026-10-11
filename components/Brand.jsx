@@ -1,15 +1,16 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Brand({ href = "/" }) {
   return (
     <Link href={href} className="brand" aria-label="Ephraim Lifanjo home">
-      <img
+      <Image
         className="brand-logo"
         src="/icon.svg"
         alt=""
         width="44"
         height="44"
-        decoding="async"
+        unoptimized
         fetchPriority="high"
         style={{
           width: 44,
